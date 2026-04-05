@@ -21,6 +21,6 @@ def QrCodeGenerator(data, logo, output):
         image_factory=styled_qr,
         module_drawer=R(),
         embeded_image_path=logo,
-        color_mask=solid_fill(back_color="white", front_color="black"),
+        color_mask=solid_fill(back_color=(255, 255, 255), front_color=(0, 0, 0)),
     )
     img.save(output)

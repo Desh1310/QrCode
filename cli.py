@@ -1,6 +1,6 @@
 from tkinter import EXCEPTION
 
-from .func import QrCodeGenerator as qr
+from func import QrCodeGenerator as qr
 
 def main():
     data = input("Enter the data to encode in the QR code: ")
@@ -17,3 +17,6 @@ def main():
 
     qr(data, logo, output)
     print(f"QR code generated and saved as '{output}'.")
+
+if __name__ == "__main__":
+    main()
